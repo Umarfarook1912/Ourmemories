@@ -4,76 +4,63 @@ import "./OurMemories.css";
 import { FaHeart } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import snow from "./assets/snow.jpg"
-import moon from "./assets/moon.jpg"
-import stars from "./assets/stars.jpg"
-import sun from "./assets/sun.jpeg"
-import rabbit from "./assets/rabbit.jpg"
-import nature from "./assets/nature.jpg"
-import cherryBlossom from "./assets/cherry blossom.jpg"
-import penguin from "./assets/penguin.jpeg"
-import butterfly from "./assets/butterfly.jpg"
-import cat from "./assets/cat.jpg"
-import ocean from "./assets/ocean.jpg"
-import sunflower from "./assets/sunflower.jpeg"
-import rainy from "./assets/rainy.jpg"
-import teddybear from "./assets/teddybear.jpg"
+
 
 const swipeableCards = [
   {
-    img: stars,
+    img: "https://res.cloudinary.com/dfvkppfch/image/upload/v1747847599/stars_lkgfgk.jpg",
     text: "Even when we are miles apart, we are under the same stars.",
   },
   {
-    img: sun,
+    img: "https://res.cloudinary.com/dfvkppfch/image/upload/v1747847612/sun_dpsi7j.jpg",
     text: "You are the sunshine that brightens my darkest days.",
   },
   {
-    img: moon,
+    img: "https://res.cloudinary.com/dfvkppfch/image/upload/v1747847596/moon_vurbuo.jpg",
     text: "The moon reminds me that even in darkness, there's light.",
   },
   {
-    img: rabbit,
+    img: "https://res.cloudinary.com/dfvkppfch/image/upload/v1747847596/rabbit_rnx7kp.jpg",
     text: "Like a rabbit in the meadow, my heart hops with joy for you.",
   },
   {
-    img: nature,
+    img: "https://res.cloudinary.com/dfvkppfch/image/upload/v1747847604/nature_qin6qb.jpg",
     text: "In nature's embrace, I find peace thinking of you.",
   },
   {
-    img: cherryBlossom,
+    img: "https://res.cloudinary.com/dfvkppfch/image/upload/v1747847604/cherry_blossom_ar9hs5.jpg",
     text: "Cherry blossoms bloom, reminding me of our fleeting moments.",
   },
   {
-    img: snow,
+    img: "https://res.cloudinary.com/dfvkppfch/image/upload/v1747847598/snow_bscgbn.jpg",
     text: "In the quiet of snowfall, all I hear is my heart calling your name",
   },
   {
-    img: penguin,
+    img: "https://res.cloudinary.com/dfvkppfch/image/upload/v1747847597/penguin_atq0t7.jpg",
     text: "Like penguins, I choose you forever.",
   },
   {
-    img: butterfly,
+    img: "https://res.cloudinary.com/dfvkppfch/image/upload/v1747847600/butterfly_r00tis.jpg",
     text: "Whenever I see butterflies, I remember how you make my heart flutter."
   },
   {
-    img: cat,
+    img: "https://res.cloudinary.com/dfvkppfch/image/upload/v1747847593/cat_kkx5j6.jpg",
     text: "You're paws-itively the cutest thing in my life"
   },
   {
-    img: ocean,
+    img: "https://res.cloudinary.com/dfvkppfch/image/upload/v1747847596/ocean_lzfxud.jpg",
     text: "My love for you is deeper than the ocean."
   },
   {
-    img: sunflower,
+    img: "https://res.cloudinary.com/dfvkppfch/image/upload/v1747847599/sunflower_yal1xy.jpg",
     text: "You are my sunshine, even on cloudy days."
   },
   {
-    img: rainy,
+    img: "https://res.cloudinary.com/dfvkppfch/image/upload/v1747847596/rainy_lrcq3q.jpg",
     text: "Rain reminds me of our calm, cozy conversations."
   },
   {
-    img: teddybear,
+    img: "https://res.cloudinary.com/dfvkppfch/image/upload/v1747847600/teddybear_quntc7.jpg",
     text: "You're my favorite cuddle, just like my teddy bear."
   }
 ];
@@ -130,7 +117,7 @@ const OurMemories = () => {
             onClick={() => setShowIntro(false)}
             style={{ cursor: "pointer", fontSize: "3rem" }}
           >
-            Dharaaaa....💖 <br />
+            Dharaaaa.... 💖 <br />
             <span style={{ fontSize: "1.2rem" }}>( The person who gives me everything )</span>
           </motion.h1>
         )}
