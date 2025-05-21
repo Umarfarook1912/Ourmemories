@@ -1,0 +1,28 @@
+.sweet-memories-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #ffe6e6, #fff3f3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #e60073;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.memory-content {
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
