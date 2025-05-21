@@ -157,24 +157,20 @@ const OurMemories = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, repeat: Infinity, repeatType: "reverse" }}
             >
-              👉 Swipe to see more memories, Every card tells the story of You 👈
+              👉 Tap the card, Every card tells the story of You 👈
             </motion.div>
+
             <div className="d-flex justify-content-center">
 
               {/* Swipeable Card */}
               <motion.div
                 className="card shadow glassy overflow-hidden position-relative"
-                drag="x"
-                dragConstraints={{ left: 0, right: 0 }}
-                onDragEnd={(event, info) => {
-                  if (info.offset.x > 100) handleSwipe("left");
-                  else if (info.offset.x < -100) handleSwipe("right");
-                }}
-                initial={{ opacity: 0, x: 100 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -100 }}
-                transition={{ duration: 0.5 }}
-                style={{ width: "18rem", cursor: "grab" }}
+                onClick={() => setCurrentCard((prev) => (prev + 1) % swipeableCards.length)}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.3 }}
+                style={{ width: "18rem", cursor: "pointer" }}
               >
                 <div className="corner-heart">
                   <FaHeart className="small-heart text-danger" />
@@ -188,8 +184,6 @@ const OurMemories = () => {
                   <p className="card-text">{swipeableCards[currentCard].text}</p>
                 </div>
               </motion.div>
-
-
             </div>
             <div className="mt-4">
               <Link to="/sweet-memories" className="btn btn-outline-light btn-lg">
