@@ -130,7 +130,7 @@ const OurMemories = () => {
             onClick={() => setShowIntro(false)}
             style={{ cursor: "pointer", fontSize: "3rem" }}
           >
-            Dharani K 💖 <br />
+            Dharaaaa....💖 <br />
             <span style={{ fontSize: "1.2rem" }}>( The person who gives me everything )</span>
           </motion.h1>
         )}
